@@ -24,12 +24,12 @@ const icons = Object.entries(imagesUrls).map(([key, value]) => ({
 }));
 
 export const jinlunTheme: Theme<string> = {
-    name: '金轮',
+    name: '哈温',
     icons: icons.map(({ name, content }) => ({
         name,
         content,
         clickSound: name,
-        tripleSound: '起飞啦',
+        tripleSound: '阿拉索哟',
     })),
     sounds,
 };
