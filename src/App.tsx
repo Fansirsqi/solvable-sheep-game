@@ -15,7 +15,7 @@ import { fishermanTheme } from './themes/fisherman';
 import { jinlunTheme } from './themes/jinlun';
 
 // 主题
-const themes = [defaultTheme, fishermanTheme, jinlunTheme];
+const themes = [defaultTheme, jinlunTheme, fishermanTheme];
 
 // 最大关卡
 const maxLevel = 50;
@@ -365,11 +365,11 @@ const App: FC = () => {
 
     return (
         <>
-            <h2>有解的羊了个羊(DEMO)</h2>
-            <h6>
-                <GithubIcon />
-            </h6>
-            <h3 className="flex-container flex-center">
+            <h2>温了个温主题版</h2>
+            {/* <h6>
+                <GithubIcon />原著ICON
+            </h6> */}
+            <h5 className="flex-container flex-center">
                 主题:
                 <select
                     onChange={(e) =>
@@ -382,8 +382,8 @@ const App: FC = () => {
                         </option>
                     ))}
                 </select>
-                Level: {level}
-            </h3>
+                关卡: {level}
+            </h5>
 
             <div className="app">
                 <div className="scene-container">
@@ -409,17 +409,17 @@ const App: FC = () => {
             <div className="queue-container flex-container flex-center" />
             <div className="flex-container flex-between">
                 <button className="flex-grow" onClick={pop}>
-                    弹出
+                    退退退
                 </button>
                 <button className="flex-grow" onClick={undo}>
-                    撤销
+                    俺后悔咧
                 </button>
                 <button className="flex-grow" onClick={wash}>
-                    洗牌
+                    乾坤大挪移
                 </button>
-                <button className="flex-grow" onClick={levelUp}>
+                {/* <button className="flex-grow" onClick={levelUp}>
                     下一关
-                </button>
+                </button> */}
                 {/*<button onClick={test}>测试</button>*/}
             </div>
 
